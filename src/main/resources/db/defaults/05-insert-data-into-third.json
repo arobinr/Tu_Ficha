@@ -56,12 +56,6 @@
                 },
                 {
                   "column": {
-                    "name": "type_third",
-                    "value": "C"
-                  }
-                },
-                {
-                  "column": {
                     "name": "id_eps",
                     "value": 1
                   }
@@ -149,12 +143,6 @@
                   "column": {
                     "name": "password",
                     "value": "1"
-                  }
-                },
-                {
-                  "column": {
-                    "name": "type_third",
-                    "value": "C"
                   }
                 },
                 {
@@ -250,12 +238,6 @@
                 },
                 {
                   "column": {
-                    "name": "type_third",
-                    "value": "C"
-                  }
-                },
-                {
-                  "column": {
                     "name": "id_eps",
                     "value": 8
                   }
@@ -347,12 +329,6 @@
                 },
                 {
                   "column": {
-                    "name": "type_third",
-                    "value": "C"
-                  }
-                },
-                {
-                  "column": {
                     "name": "id_eps",
                     "value": 7
                   }
@@ -440,12 +416,6 @@
                   "column": {
                     "name": "password",
                     "value": "1"
-                  }
-                },
-                {
-                  "column": {
-                    "name": "type_third",
-                    "value": "V"
                   }
                 },
                 {
