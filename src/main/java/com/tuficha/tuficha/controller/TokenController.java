@@ -22,9 +22,19 @@ public class TokenController {
         return tokenRepository.findAll();
     }
 
+//    @PostMapping("/save")
+//    public Token saveToken(@RequestBody Token token){
+//        return this.tokenRepository.save(token);
+//    }
+
     @PostMapping("/save")
-    public Token saveToken(@RequestBody Token token){
-        return this.tokenRepository.save(token);
+    public ResponseEntity saveToken(@RequestBody Token token){
+        if (token.getId_third() != 0){
+            this.tokenRepository.save(token);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @DeleteMapping("/{TokenId}")

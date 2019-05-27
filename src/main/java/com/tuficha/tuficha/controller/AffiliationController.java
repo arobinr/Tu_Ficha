@@ -26,9 +26,19 @@ public class AffiliationController {
         return affiliation;
     }
 
+//    @PostMapping("/save")
+//    public Affiliation saveAffiliation(@RequestBody Affiliation affiliation){
+//        return this.affiliationRepository.save(affiliation);
+//    }
+
     @PostMapping("/save")
-    public Affiliation saveAffiliation(@RequestBody Affiliation affiliation){
-        return this.affiliationRepository.save(affiliation);
+    public ResponseEntity saveAffiliation(@RequestBody Affiliation affiliation){
+        if (affiliation.getName()!="" && affiliation.getType()!="" && (affiliation.getType().equals("E") || affiliation.getType().equals("A"))){
+            this.affiliationRepository.save(affiliation);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @DeleteMapping("/{affiliationId}")
