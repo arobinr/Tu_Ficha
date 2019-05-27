@@ -28,10 +28,21 @@ public class ProfileController {
         return profile;
     }
 
+//    @PostMapping("/save")
+//    public Profile saveProfile(@RequestBody Profile profile){
+//        return this.profileRepository.save(profile);
+//    }
+
     @PostMapping("/save")
-    public Profile saveProfile(@RequestBody Profile profile){
-        return this.profileRepository.save(profile);
+    public ResponseEntity saveProfile(@RequestBody Profile profile){
+        if (profile.getName()!=""){
+            this.profileRepository.save(profile);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
+
 
     @DeleteMapping("/{profileId}")
     public ResponseEntity deleteProfile(@PathVariable Long profileId){

@@ -17,9 +17,19 @@ public class CityController {
     @Autowired
     private CityRepository cityRepository;
 
+//    @PostMapping("/save")
+//    public City saveCity(@RequestBody City city){
+//        return this.cityRepository.save(city);
+//    }
+
     @PostMapping("/save")
-    public City saveCity(@RequestBody City city){
-        return this.cityRepository.save(city);
+    public ResponseEntity saveCity(@RequestBody City city){
+        if (city.getName() != ""){
+            this.cityRepository.save(city);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/")

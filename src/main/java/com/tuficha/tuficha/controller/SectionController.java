@@ -18,9 +18,19 @@ public class SectionController {
     @Autowired
     private SectionRepository sectionRepository;
 
+//    @PostMapping("/save")
+//    public Section saveSection(@RequestBody Section section){
+//        return this.sectionRepository.save(section);
+//    }
+
     @PostMapping("/save")
-    public Section saveSection(@RequestBody Section section){
-        return this.sectionRepository.save(section);
+    public ResponseEntity saveSection(@RequestBody Section section){
+        if (section.getName()!="" && section.getId_city()!=0){
+            this.sectionRepository.save(section);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/")

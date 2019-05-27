@@ -16,9 +16,21 @@ public class ThirdController {
     @Autowired
     private ThirdRepository thirdRepository;
 
+//    @PostMapping("/save")
+//    public Third saveThird(@RequestBody Third third){
+//        return this.thirdRepository.save(third);
+//    }
+
     @PostMapping("/save")
-    public Third saveThird(@RequestBody Third third){
-        return this.thirdRepository.save(third);
+    public ResponseEntity saveThird(@RequestBody Third third){
+        if (third.getIdentification()!="" && third.getName()!=""     && third.getId_section()!=0 &&
+                third.getId_profile()!=0      && third.getPassword()!="" && third.getId_eps()!=0     &&
+                third.getId_arl()!=0          && third.getPhone()!=""    && third.getRh()!="")  {
+            this.thirdRepository.save(third);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/")
