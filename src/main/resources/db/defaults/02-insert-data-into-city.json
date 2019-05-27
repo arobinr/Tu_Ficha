@@ -1,0 +1,189 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from city where id = 1"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Bogotá"
+                  }
+                }
+              ],
+              "tableName": "city"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from city where id = 2"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Cali"
+                  }
+                }
+              ],
+              "tableName": "city"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "3",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from city where id = 3"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Tunja"
+                  }
+                }
+              ],
+              "tableName": "city"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "4",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from city where id = 4"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Cartagena"
+                  }
+                }
+              ],
+              "tableName": "city"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "5",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from city where id = 5"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Barranquilla"
+                  }
+                }
+              ],
+              "tableName": "city"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

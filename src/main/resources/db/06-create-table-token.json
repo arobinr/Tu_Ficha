@@ -1,0 +1,56 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "liquibase",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "token",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "bigint",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_third",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createSequence": {
+              "sequenceName": "token_id_seq"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_third",
+              "baseTableName": "token",
+              "constraintName": "fk_token_id_third",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "third"
+            }
+          }
+        ]
+      }
+    }
+  ]
+
+}

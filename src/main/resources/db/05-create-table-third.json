@@ -1,0 +1,178 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "liquibase",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "third",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "bigint",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "type": "varchar(30)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "type": "varchar(256)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "type": "varchar(40)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "type": "char",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "type": "varchar(20)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "type": "varchar(128)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "type": "varchar(4)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createSequence": {
+              "sequenceName": "third_id_seq"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_section",
+              "baseTableName": "third",
+              "constraintName": "fk_third_id_section",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "section"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_profile",
+              "baseTableName": "third",
+              "constraintName": "fk_third_id_profile",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "profile"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_eps",
+              "baseTableName": "third",
+              "constraintName": "fk_third_id_eps",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "affiliation"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_arl",
+              "baseTableName": "third",
+              "constraintName": "fk_third_id_arl",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "affiliation"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "nvoxland",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "section",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "bigint",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "type": "varchar(60)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "type": "bigint",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createSequence": {
+              "sequenceName": "section_id_seq"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseColumnNames": "id_city",
+              "baseTableName": "section",
+              "constraintName": "fk_section_id_city",
+              "onDelete": "RESTRICT",
+              "onUpdate": "CASCADE",
+              "referencedColumnNames": "id",
+              "referencedTableName": "city"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+

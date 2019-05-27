@@ -1,0 +1,2327 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 1"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Empresas Publicas de Medellin Departamento Medico"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 2"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Fondo de Pasivo Social de Ferrocarriles"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "3",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 3"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Aliansalud EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "4",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 4"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Salud Total S.A."
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "5",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 5"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Medimás E.P.S"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "6",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 6"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 6
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "E.P.S Sanitas"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "7",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 7"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 7
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Compensar Entidad Promotora de Salud"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "8",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 8"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 8
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "EPS Sura"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "9",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 9"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 9
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfenalco Valle E.P.S."
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "10",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 10"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 10
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Coomeva EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "11",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 11"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Famisanar EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "12",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 12"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 12
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Servicio Occidental de Salud S.O.S. EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "13",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 13"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 13
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Cruz Blanca EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "14",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 14"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 14
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Saludvida EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "15",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 15"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 15
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Nueva EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "16",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 16"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 16
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Fosyga Fondo de Solidaridad y Garantias"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "17",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 17"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 17
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Convidad Entidad Administradora de Regimen Subcidiado"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "18",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 18"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 18
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Caprecosa EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "19",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 19"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 19
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Capital Salud EPS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "20",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 20"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 20
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Asociacion de Cabildos Indigenas del Cesar Dusakawi"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "21",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 21"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 21
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Manexka Asociacion de Cabildos Indigenas del Resguardo Indigena Zenú"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "22",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 22"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 22
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Asociacion Indigena del Cauca"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "23",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 23"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 23
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Entidad Promotora de Salud Anas Wayuu EPSI"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "24",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 24"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 24
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Entidad Promotora de Salud Mallamas EPSI"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "25",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 25"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 25
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Entidad Promotora de Salud PijaoSalud EPSI"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "26",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 26"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 26
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Emdisalud ESS Empresa Mutual para el Desarrollo Integral de la Salud"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "27",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 27"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 27
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Asociacion Mutual Ser Empresa Solidaria de Salud ESS"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "28",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 28"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 28
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Emssanar E.S.S. Asociacion Mutual Empresa Solidaria de Salud de Nariño"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "29",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 29"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 29
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Coosalud E.S.S. "
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "30",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 30"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 30
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comparta Cooperativa de Salud Comunitaria"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "31",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 31"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 31
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Asmet Salud Asociacion Mutual La Esperanza"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "32",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 32"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 32
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Asociación Mutual Barrios Unidos de Quibdó E.S.S. AMBUQ"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "33",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 33"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 33
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Entidad Cooperativa Solidaria de Salud Ecoopsos"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "34",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 34"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 34
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Savia Salud EPS - Comfama"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "changeSet": {
+        "id": "35",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 35"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 35
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfaboy EPS-CCF de Boyacá"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "36",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 36"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 36
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfacor EPS – CCF de Córdoba"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "37",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 37"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 37
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfachoco – CCF del Chocó"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "38",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 38"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 38
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Caja de Compensación Familiar de La Guajira"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "39",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 39"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 39
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfamiliar Huila EPS – CCF"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "40",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 40"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 40
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfamiliar de Nariño EPS – CCF"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "41",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 41"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 41
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfasucre EPS-CCF de Sucre"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "42",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 42"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 42
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Comfacundi - CCF de Cundinamarca"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "43",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 43"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 43
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Cajacopi Atlántico  - CCF"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "44",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 44"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 44
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "A.R.L. Seguros de Vida Colpatria S.A."
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "45",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 45"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 45
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Compañía de Seguros Bolívar S.A."
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "46",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 46"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 46
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Seguros de Vida Aurora"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "47",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 47"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 47
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "ARP Alfa"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "48",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 48"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 48
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Liberty Seguros de Vida S.A."
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "49",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 49"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 49
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Positiva Compañía de Seguros"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "50",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 50"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 50
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Colmena Riesgos Profesionales"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "51",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 51"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 51
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "ARL Sura"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "52",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 52"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 52
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "La Equidad Seguros de Vida"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "53",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 53"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 53
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Mapfre Colombia Vida Seguros S.A"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "A"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "54",
+        "author": "Andres Robin",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck": {
+              "expectedResult": "0",
+              "sql": "select count(*) from affiliation where id = 54"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 54
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Savia Salud EPS - Comfama"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type",
+                    "value": "E"
+                  }
+                }
+              ],
+              "tableName": "affiliation"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

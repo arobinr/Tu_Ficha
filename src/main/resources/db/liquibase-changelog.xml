@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="01-create-table-city.json" relativeToChangelogFile="true"/>
+    <include file="02-create-table-profile.json" relativeToChangelogFile="true"/>
+    <include file="03-create-table-affiliation.json" relativeToChangelogFile="true"/>
+    <include file="04-create-table-section.json" relativeToChangelogFile="true"/>
+    <include file="05-create-table-third.json" relativeToChangelogFile="true"/>
+    <include file="06-create-table-token.json" relativeToChangelogFile="true"/>
+
+    <include file="defaults/01-insert-data-into-profile.json" relativeToChangelogFile="true"/>
+    <include file="defaults/02-insert-data-into-city.json" relativeToChangelogFile="true"/>
+    <include file="defaults/03-insert-data-into-affiliation.json" relativeToChangelogFile="true"/>
+    <include file="defaults/04-insert-data-into-section.json" relativeToChangelogFile="true"/>
+    <include file="defaults/05-insert-data-into-third.json" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

@@ -1,0 +1,489 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from third where id = 1"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "value": "1024526908"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Leo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "value": "C"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "value": "3014522069"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "leo@gmail.com"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "value": "O+"
+                  }
+                }
+              ],
+              "tableName": "third"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from third where id = 2"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "value": "1095410215"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Diego"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "value": "C"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "value": "3145879406"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "diego@gmail.com"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "value": "A+"
+                  }
+                }
+              ],
+              "tableName": "third"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "3",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from third where id = 3"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "value": "1012012547"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Andres"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "value": "C"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "value": 8
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "value": "3115556589"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "andres@gmail.com"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "value": "B+"
+                  }
+                }
+              ],
+              "tableName": "third"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "4",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from third where id = 4"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "value": "1065321410"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Jhon"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "value": 6
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "value": "C"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "value": 7
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "value": "3164460071"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "jhon@gmail.com"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "value": "A-"
+                  }
+                }
+              ],
+              "tableName": "third"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "5",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from third where id = 5"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "identification",
+                    "value": "1010041983"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "visitor"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_section",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_profile",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "type_third",
+                    "value": "V"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_eps",
+                    "value": 9
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_arl",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "phone",
+                    "value": "3187069225"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "visitor@gmail.com"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "rh",
+                    "value": "AB+"
+                  }
+                }
+              ],
+              "tableName": "third"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

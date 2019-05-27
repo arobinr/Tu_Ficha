@@ -1,0 +1,262 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 1"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Desarrollo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 1
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 2"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 2
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Administración"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 1
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "3",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 3"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 3
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Recursos Humanos"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 2
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "4",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 4"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 4
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Ventas"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 3
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "5",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 5"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Compras"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 4
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "6",
+        "author": "Diego Mesa",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN",
+            "onError": "MARK_RAN",
+            "sqlCheck" : {
+              "expectedResult": "0",
+              "sql": "select count(*) from section where id = 6"
+            }
+          }
+        ],
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": 6
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "value": "Contabilidad"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "id_city",
+                    "value": 4
+                  }
+                }
+              ],
+              "tableName": "section"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
