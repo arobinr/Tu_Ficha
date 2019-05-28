@@ -37,13 +37,12 @@ public class TokenController {
         }
     }
 
-    @DeleteMapping("/{TokenId}")
+    @DeleteMapping("/{tokenId}")
     public ResponseEntity deleteToken(@PathVariable Long tokenId){
         try {
             this.tokenRepository.deleteById(tokenId);
             return new ResponseEntity<>(HttpStatus.OK);
-        }
-        catch (EmptyResultDataAccessException e){
+        }catch (EmptyResultDataAccessException e){
             System.out.println("Fallo delete");
         }
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

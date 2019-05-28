@@ -7,10 +7,7 @@ import javax.persistence.*;
 public class Token {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "token_id_seq")
     private Long id;
-
-
     private Long id_third;
 
     public Token() {

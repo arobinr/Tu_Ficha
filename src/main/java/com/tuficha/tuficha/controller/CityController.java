@@ -46,8 +46,7 @@ public class CityController {
         try {
             this.cityRepository.deleteById(cityId);
             return new ResponseEntity<>(HttpStatus.OK);
-        }
-        catch (EmptyResultDataAccessException e){
+        }catch (EmptyResultDataAccessException e){
             System.out.println("Fallo delete");
         }
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
