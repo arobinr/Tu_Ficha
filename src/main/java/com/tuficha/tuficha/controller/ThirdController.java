@@ -44,10 +44,10 @@ public class ThirdController {
         return third;
     }
 
-    @DeleteMapping("/{id_Third}")
-    public ResponseEntity deleteThird(@RequestBody Long id_Third){
+    @DeleteMapping("/{thirdId}")
+    public ResponseEntity deleteThird(@PathVariable Long thirdId){
         try {
-            this.thirdRepository.deleteById(id_Third);
+            this.thirdRepository.deleteById(thirdId);
             return new ResponseEntity<>(HttpStatus.OK);
         }catch (EmptyResultDataAccessException e){
             System.out.println("Fallo delete");
